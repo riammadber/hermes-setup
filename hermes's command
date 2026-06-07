@@ -1,0 +1,6 @@
+  hermes                Start chatting
+   hermes setup        Configure API keys & settings
+   hermes config       View/edit configuration
+   hermes config edit  Open config in editor
+   hermes gateway      Start messaging gateway (Telegram, Discord, etc.)
+   hermes update       Update to latest version

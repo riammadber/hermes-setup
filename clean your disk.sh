@@ -14,3 +14,7 @@ rm -rf /home/ubuntu/.npm    #delete npm
 du -sh /home/ubuntu/.hermes/* 2>/dev/null | sort -rh
 # find the unnecessary items
 rm -rf /home/ubuntu/.hermes/{item name}
+
+#for get intro the items 
+ls path
+

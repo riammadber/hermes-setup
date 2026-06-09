@@ -1,5 +1,4 @@
-# finds every venv by its config file. For a cleaner output with just the venv directories
-find / -name "pyvenv.cfg" 2>/dev/null | xargs -I{} dirname {}
+
 # check Disk space
 df -h
 # Find what's eating space:
@@ -13,3 +12,5 @@ rm -rf /home/ubuntu/.cache  #delete cache
 rm -rf /home/ubuntu/.npm    #delete npm
 #if .hermes looks too big, something inside is bloated. Need to check what's inside
 du -sh /home/ubuntu/.hermes/* 2>/dev/null | sort -rh
+# find the unnecessary items
+rm -rf /home/ubuntu/.hermes/{item name}

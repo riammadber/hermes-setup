@@ -8,3 +8,8 @@ python3 -m venv /home/ubuntu/.hermes/hermes-agent/{venv_name}
 
 # Install hermes into it
 /home/ubuntu/.hermes/hermes-agent/{venv_name}/bin/pip install -e /home/ubuntu/.hermes/hermes-agent/
+# if you setup script uses uv
+#This will create the venv correctly with uv
+cd /home/ubuntu/.hermes/hermes-agent/
+rm -rf venv
+./setup-hermes.sh

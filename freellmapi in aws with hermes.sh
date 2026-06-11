@@ -1,3 +1,12 @@
+#for clone and run freellmapi in aws
+git clone https://github.com/tashfeenahmed/freellmapi.git
+cd freellmapi
+npm install
+cp .env.example .env
+ENCRYPTION_KEY="$(node -e 'console.log(require("crypto").randomBytes(32).toString("hex"))')"
+printf "ENCRYPTION_KEY=%s\nPORT=3001\n" "$ENCRYPTION_KEY" > .env
+npm run dev
+
 # for run freellmapi aws always 
 cd ~/freellmapi
 npm install -g pm2
